@@ -1,0 +1,24 @@
+{
+  "name": "strigov-cc-plugins",
+  "owner": {
+    "name": "Ian Strigov",
+    "url": "https://github.com/strigov"
+  },
+  "plugins": [
+    {
+      "name": "vassal-litigator-cc",
+      "source": {
+        "source": "github",
+        "repo": "strigov/vassal-litigator-cc"
+      },
+      "description": "Вассал-Литигатор (Claude Code edition) — плагин для ведения судебных дел: intake, таймлайн, правовой анализ с Codex CLI",
+      "version": "1.0.0",
+      "author": {
+        "name": "Ian Strigov"
+      },
+      "homepage": "https://github.com/strigov/vassal-litigator-cc",
+      "license": "GPL-3.0",
+      "keywords": ["legal", "litigation", "russian-law", "codex", "document-management"]
+    }
+  ]
+}
