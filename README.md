@@ -37,7 +37,3 @@
 ```
 
 Текущая опубликованная версия в marketplace: `0.2.3`.
-
-## Связанные маркетплейсы
-
-- [strigov/suzerain](https://github.com/strigov/suzerain) — Cowork edition плагинов (апстрим).
