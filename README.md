@@ -16,6 +16,24 @@
 /plugin
 ```
 
+## Обновление
+
+Когда в маркетплейсе или плагине вышла новая версия:
+
+```
+/plugin marketplace update strigov-cc-plugins
+/plugin update <plugin-name>@strigov-cc-plugins
+```
+
+Первая команда тянет свежий `marketplace.json` (актуализирует список и заявленные версии). Вторая — переустанавливает сам плагин из его репо.
+
+Обновить всё установленное из всех маркетплейсов сразу:
+
+```
+/plugin marketplace update --all
+/plugin update --all
+```
+
 ## Плагины
 
 ### vassal-litigator-cc
