@@ -34,6 +34,21 @@
       "homepage": "https://github.com/strigov/vassal-litigator-cc",
       "license": "GPL-3.0",
       "keywords": ["legal", "litigation", "russian-law", "codex", "document-management"]
+    },
+    {
+      "name": "superpowers-strigov-ver",
+      "source": {
+        "source": "github",
+        "repo": "strigov/superpowers-strigov-ver"
+      },
+      "description": "Multi-model dev orchestrator for Claude Code: Sonnet coordinates, Opus writes plans and reviews, Codex implements and cross-checks",
+      "version": "0.2.3",
+      "author": {
+        "name": "Ian Strigov"
+      },
+      "homepage": "https://github.com/strigov/superpowers-strigov-ver",
+      "license": "MIT",
+      "keywords": ["productivity", "developer-tools", "codex", "opus", "sonnet", "planning", "code-review"]
     }
   ]
 }

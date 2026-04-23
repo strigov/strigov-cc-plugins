@@ -28,6 +28,16 @@
 
 Форк [vassal-litigator](https://github.com/strigov/vassal-litigator) v0.5.4 (Cowork edition), адаптированный под нативную установку в Claude Code.
 
+### superpowers-strigov-ver
+
+[strigov/superpowers-strigov-ver](https://github.com/strigov/superpowers-strigov-ver) — multi-model workflow для Claude Code: Sonnet оркестрирует, Opus пишет планы и делает judgment/review, Codex реализует и делает cross-check.
+
+```
+/plugin install superpowers-strigov-ver@strigov-cc-plugins
+```
+
+Текущая опубликованная версия в marketplace: `0.2.3`.
+
 ## Связанные маркетплейсы
 
 - [strigov/suzerain](https://github.com/strigov/suzerain) — Cowork edition плагинов (апстрим).
