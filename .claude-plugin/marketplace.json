@@ -6,21 +6,6 @@
   },
   "plugins": [
     {
-      "name": "superpowers-strigov-ver",
-      "source": {
-        "source": "github",
-        "repo": "strigov/superpowers-strigov-ver"
-      },
-      "description": "Personal fork of superpowers: multi-model dev orchestrator — Sonnet orchestrates, Opus for judgment (planning, review, escalation), Codex xhigh for plan review and diff control, Codex high for implementation. Includes brainstorming, TDD, worktrees, systematic-debugging, code-review skills.",
-      "version": "0.2.0",
-      "author": {
-        "name": "Ian Strigov"
-      },
-      "homepage": "https://github.com/strigov/superpowers-strigov-ver",
-      "license": "MIT",
-      "keywords": ["dev-orchestrator", "multi-model", "codex", "opus", "sonnet", "subagent-driven-development", "code-review"]
-    },
-    {
       "name": "vassal-litigator-cc",
       "source": {
         "source": "github",
@@ -41,14 +26,14 @@
         "source": "github",
         "repo": "strigov/superpowers-strigov-ver"
       },
-      "description": "Multi-model dev orchestrator for Claude Code: Sonnet coordinates, Opus writes plans and reviews, Codex implements and cross-checks",
+      "description": "Personal fork of superpowers: multi-model dev orchestrator — Sonnet orchestrates, Opus for judgment (planning, review, escalation), Codex xhigh for plan review and diff control, Codex high for implementation. Includes brainstorming, TDD, worktrees, systematic-debugging, code-review skills.",
       "version": "0.2.3",
       "author": {
         "name": "Ian Strigov"
       },
       "homepage": "https://github.com/strigov/superpowers-strigov-ver",
       "license": "MIT",
-      "keywords": ["productivity", "developer-tools", "codex", "opus", "sonnet", "planning", "code-review"]
+      "keywords": ["dev-orchestrator", "multi-model", "codex", "opus", "sonnet", "subagent-driven-development", "code-review"]
     }
   ]
 }
