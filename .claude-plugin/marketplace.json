@@ -27,7 +27,7 @@
         "repo": "strigov/superpowers-strigov-ver"
       },
       "description": "Personal fork of superpowers: multi-model dev orchestrator — Sonnet orchestrates, Opus for judgment (planning, review, escalation), Codex xhigh for plan review and diff control, Codex high for implementation. Includes brainstorming, TDD, worktrees, systematic-debugging, code-review skills.",
-      "version": "0.2.5",
+      "version": "0.2.6",
       "author": {
         "name": "Ian Strigov"
       },
