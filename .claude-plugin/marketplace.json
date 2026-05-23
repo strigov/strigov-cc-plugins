@@ -18,7 +18,13 @@
       },
       "homepage": "https://github.com/strigov/vassal-litigator-cc",
       "license": "GPL-3.0",
-      "keywords": ["legal", "litigation", "russian-law", "codex", "document-management"]
+      "keywords": [
+        "legal",
+        "litigation",
+        "russian-law",
+        "codex",
+        "document-management"
+      ]
     },
     {
       "name": "superpowers-strigov-ver",
@@ -27,13 +33,21 @@
         "repo": "strigov/superpowers-strigov-ver"
       },
       "description": "Personal fork of superpowers: multi-model dev orchestrator — Sonnet orchestrates, Opus for judgment (planning, review, escalation), Codex xhigh for plan review and diff control, Codex high for implementation. Includes brainstorming, TDD, worktrees, systematic-debugging, code-review skills.",
-      "version": "0.3.2",
+      "version": "0.3.3",
       "author": {
         "name": "Ian Strigov"
       },
       "homepage": "https://github.com/strigov/superpowers-strigov-ver",
       "license": "MIT",
-      "keywords": ["dev-orchestrator", "multi-model", "codex", "opus", "sonnet", "subagent-driven-development", "code-review"]
+      "keywords": [
+        "dev-orchestrator",
+        "multi-model",
+        "codex",
+        "opus",
+        "sonnet",
+        "subagent-driven-development",
+        "code-review"
+      ]
     }
   ]
 }
