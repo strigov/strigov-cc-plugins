@@ -32,8 +32,8 @@
         "source": "github",
         "repo": "strigov/superpowers-strigov-ver"
       },
-      "description": "Personal fork of superpowers: multi-model dev orchestrator — Sonnet orchestrates, Opus for judgment (planning, review, escalation), Codex xhigh for plan review and diff control, Codex high for implementation. Includes brainstorming, TDD, worktrees, systematic-debugging, code-review skills.",
-      "version": "0.3.3",
+      "description": "Personal fork of superpowers for strigov: multi-model dev orchestrator — Sonnet main thread orchestrates (triage, dispatching, polling, git); Opus invoked as subagent for judgment (plan writing, plan revision, code review, escalation); Codex xhigh reviews plans (loop cap=4) and runs a control review on diffs after Opus review clears (fused loop cap=4); Codex high implements. Plans are written to docs/plans/YYYY-MM-DD-<slug>.md with YAML frontmatter for cross-session resume. Auto-commits on clean review. Routes trivial edits to Sonnet quickfix subagent. Plus codex-invocation recipe and selected upstream skills (brainstorming, writing-plans, systematic-debugging, TDD, worktrees, verification-before-completion, finishing-a-development-branch, code-review flow, writing-skills, dispatching-parallel-agents).",
+      "version": "0.3.4",
       "author": {
         "name": "Ian Strigov"
       },
