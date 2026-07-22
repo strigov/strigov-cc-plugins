@@ -48,10 +48,10 @@
 
 ### superpowers-strigov-ver
 
-[strigov/superpowers-strigov-ver](https://github.com/strigov/superpowers-strigov-ver) — структурированный multi-model workflow для Claude Code: Sonnet оркестрирует, Codex Sol пишет план, Opus ревьюит план и код, Codex Luna реализует, а Sol выполняет независимый control review. Включает verification gate, review packages, финальное ревью всей ветки и возобновление Codex по адресу треда.
+[strigov/superpowers-strigov-ver](https://github.com/strigov/superpowers-strigov-ver) — структурированный multi-model workflow для Claude Code: Sonnet оркестрирует, Codex Sol пишет план, Opus ревьюит план и код, Fable подключается как уровень эскалации, Codex Luna реализует, а Sol выполняет независимый control review. Включает verification gate, review packages, финальное ревью всей ветки и возобновление Codex по адресу треда.
 
 ```
 /plugin install superpowers-strigov-ver@strigov-cc-plugins
 ```
 
-Текущая опубликованная версия в marketplace: `0.6.0`.
+Текущая опубликованная версия в marketplace: `0.6.1`.
