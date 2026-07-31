@@ -5,21 +5,37 @@
 ## Источники истины
 
 - Текущее опубликованное состояние marketplace хранится в `.claude-plugin/marketplace.json`.
-- Целевая версия плагина берётся из `.claude-plugin/plugin.json` в **удалённой default-ветке исходного репозитория**, указанного в поле `source.repo`.
+- Целевая версия плагина берётся из `.claude-plugin/plugin.json` в **удалённой default-ветке исходного репозитория**, указанного в поле `source.url`.
 - `README.md`, этот файл, `CLAUDE.md`, локальный plugin cache, Git-теги и текущая версия каталога не являются источником целевой версии.
 - Если пользователь явно назвал целевую версию, она должна совпадать с удалённым `plugin.json`. При расхождении остановитесь и покажите его пользователю.
 
 Никогда не угадывайте «последнюю версию» по истории этого marketplace-репозитория. Сначала прочитайте manifest исходного плагина на GitHub.
 
+## Формат `source` в записях каталога
+
+Все плагины каталога объявляются git-источником с явным HTTPS-URL:
+
+```json
+"source": {
+  "source": "url",
+  "url": "https://github.com/strigov/<plugin-repo>.git"
+}
+```
+
+Не переводите записи обратно на форму `{"source": "github", "repo": "owner/repo"}`. Для неё Claude Code по умолчанию строит SSH-URL (`git@github.com:owner/repo.git`) и переключается на HTTPS только при выставленной `CLAUDE_CODE_PLUGIN_PREFER_HTTPS` (или `CLAUDE_CODE_REMOTE`); отката с SSH на HTTPS нет, поэтому на машинах без SSH-ключа к GitHub установка падает с `Permission denied (publickey)`. Тип `url` передаёт URL в git как есть.
+
+Имя типа — именно `url`; `"source": "git"` невалидно для plugin source и приводит к ошибке «source type your Claude Code version does not support». Поддерживаемые типы plugin source: относительный путь-строка, `github`, `url`, `git-subdir`, `npm`.
+
 ## Обновление или публикация плагина
 
 Когда пользователь просит «обновить плагин в marketplace», «опубликовать новую версию» или аналогичное, выполните следующий порядок:
 
-1. Найдите запись плагина в `.claude-plugin/marketplace.json` и прочитайте `source.repo`.
+1. Найдите запись плагина в `.claude-plugin/marketplace.json` и прочитайте `source.url`.
 2. Получите manifest из удалённой default-ветки исходного репозитория. Предпочтительный шаблон:
 
    ```bash
-   repo="$(jq -r '.plugins[] | select(.name == "<plugin-name>") | .source.repo' .claude-plugin/marketplace.json)"
+   url="$(jq -r '.plugins[] | select(.name == "<plugin-name>") | .source.url' .claude-plugin/marketplace.json)"
+   repo="$(printf '%s\n' "$url" | sed -E 's#^https://github\.com/##; s#\.git$##')"
    branch="$(gh api "repos/$repo" --jq '.default_branch')"
    gh api "repos/$repo/contents/.claude-plugin/plugin.json?ref=$branch" \
      --jq '.content' | base64 --decode | jq '{name, version, description}'
