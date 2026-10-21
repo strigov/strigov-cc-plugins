@@ -54,4 +54,4 @@
 /plugin install superpowers-strigov-ver@strigov-cc-plugins
 ```
 
-Текущая опубликованная версия в marketplace: `0.11.1`.
+Текущая опубликованная версия в marketplace: `0.12.0`.
